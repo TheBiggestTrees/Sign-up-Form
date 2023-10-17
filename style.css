@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #aac6ef7e;
+}
+
+.desktopPic {
+    display: none;
+}
+
+.mobilePic {
+    width: 100vw;
+    height: 50vh;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cadcf7;
+    width:100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 20px auto;
+}
+
+@media screen and (min-width: 720px) {
+    
+    body {
+        flex-direction: row; 
+    }
+
+    .mobilePic {
+        display: none;
+    }
+
+    .desktopPic {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .signUpForm {
+        margin: auto;
+    }
+  
+}

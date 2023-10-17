@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="mobilePic">
+        <img class="mobilePic" alt="background" src="./bgMobileImage.jpg">
+    </div>
+    
+    <div class="desktopPic">
+        <img alt="background" src="./bgDesktopImage.jpg">
+    </div>
+
+    <div class="signUpForm">
+
+        <p>
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+        </p>
+
+        <p>You <em>know</em> you want to.</p>
+
+        <div class="formBox">
+            <h1>Let's get signed up!</h1>
+            <form method="POST" action="">
+                <div>
+                    <label for="firstName">First Name | </label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Tree" required/>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name | </label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Branches" required/>
+                </div>
+
+                <div>
+                    <label for="email">Email | </label>
+                    <input type="email" id="email" name="email" placeholder="Tree@branches.com" required/>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number | </label>
+                    <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required/>
+                </div>
+
+                <div>
+                    <label for="pass">Password | </label>
+                    <input type="password" id="pass" name="pass" placeholder="Password" required/>
+                </div>
+
+                <div>
+                    <label for="conPass">Confirm Password | </label>
+                    <input type="password" id="conPass" name="conPass" placeholder="Confirm Password" required/>
+                </div>
+
+                <input type="submit" value="Create Account"/>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
