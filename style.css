@@ -47,10 +47,26 @@ input {
     margin: 20px auto;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1024px) {
     
     body {
         flex-direction: row; 
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .leftForm {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .rightForm {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
     }
 
     .mobilePic {

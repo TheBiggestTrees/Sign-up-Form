@@ -26,40 +26,43 @@
 
         <div class="formBox">
             <h1>Let's get signed up!</h1>
-            <form method="POST" action="">
-                <div>
+            <form id="signUp" method="POST" action="">
+                <div class="leftForm">
                     <label for="firstName">First Name | </label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Tree" required/>
-                </div>
-
-                <div>
-                    <label for="lastName">Last Name | </label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Branches" required/>
-                </div>
-
-                <div>
+                    <div>
+                        <input type="text" id="firstName" name="firstName" placeholder="Tree" required/>
+                    </div>
+                    
                     <label for="email">Email | </label>
-                    <input type="email" id="email" name="email" placeholder="Tree@branches.com" required/>
-                </div>
-
-                <div>
-                    <label for="phone">Phone Number | </label>
-                    <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required/>
-                </div>
-
-                <div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Tree@branches.com" required/>
+                    </div>
+                    
                     <label for="pass">Password | </label>
-                    <input type="password" id="pass" name="pass" placeholder="Password" required/>
+                    <div>
+                        <input type="password" id="pass" name="pass" placeholder="Password" required/>
+                    </div>
                 </div>
-
-                <div>
+                
+                <div class="rightForm">
+                    <label for="lastName">Last Name | </label>
+                    <div>
+                        <input type="text" id="lastName" name="lastName" placeholder="Branches" required/>
+                    </div>
+                    
+                    <label for="phone">Phone Number | </label>
+                    <div>
+                        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required/>
+                    </div>
                     <label for="conPass">Confirm Password | </label>
-                    <input type="password" id="conPass" name="conPass" placeholder="Confirm Password" required/>
+                    <div>
+                        <input type="password" id="conPass" name="conPass" placeholder="Confirm Password" required/>
+                    </div>
                 </div>
 
-                <input type="submit" value="Create Account"/>
             </form>
         </div>
+        <input type="submit" form="signUp" value="Create Account"/>
     </div>
 
 </body>
