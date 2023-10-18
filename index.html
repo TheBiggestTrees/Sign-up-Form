@@ -10,56 +10,69 @@
     
     <div class="mobilePic">
         <img class="mobilePic" alt="background" src="./bgMobileImage.jpg">
+        
     </div>
     
     <div class="desktopPic">
         <img alt="background" src="./bgDesktopImage.jpg">
+        <div class="picOverlay">
+            <img alt="SSLogo" src="./SSLogo.png">
+            <div class="overlayText">Super Slinky Server</div>
+        </div>
     </div>
 
     <div class="signUpForm">
 
-        <p>
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-        </p>
+        <h2>
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+            <p>Sign up <em>now </em>  to get started.</p>
+        </h2>
 
-        <p>You <em>know</em> you want to.</p>
+        <h2>You <em>know </em>  you want to.</h2>
 
         <div class="formBox">
             <h1>Let's get signed up!</h1>
             <form id="signUp" method="POST" action="">
-                <div class="leftForm">
-                    <label for="firstName">First Name | </label>
-                    <div>
-                        <input type="text" id="firstName" name="firstName" placeholder="Tree" required/>
-                    </div>
-                    
-                    <label for="email">Email | </label>
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Tree@branches.com" required/>
-                    </div>
-                    
-                    <label for="pass">Password | </label>
-                    <div>
-                        <input type="password" id="pass" name="pass" placeholder="Password" required/>
-                    </div>
-                </div>
+                <div class="divForm">
+                    <div class="leftForm">
+                        <label for="firstName">First Name</label>
+                        <div>
+                            <input type="text" id="firstName" name="firstName" placeholder="Tree" required/>
+                            <span></span>
+                        </div>
                 
-                <div class="rightForm">
-                    <label for="lastName">Last Name | </label>
-                    <div>
-                        <input type="text" id="lastName" name="lastName" placeholder="Branches" required/>
+                        <label for="email">Email</label>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Tree@branches.com" required/>
+                            <span></span>
+                        </div>
+                
+                        <label for="pass">Password</label>
+                        <div>
+                            <input type="password" id="pass" name="pass" placeholder="Password" required/>
+                            <span></span>
+                        </div>
                     </div>
-                    
-                    <label for="phone">Phone Number | </label>
-                    <div>
-                        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required/>
-                    </div>
-                    <label for="conPass">Confirm Password | </label>
-                    <div>
-                        <input type="password" id="conPass" name="conPass" placeholder="Confirm Password" required/>
+                
+                    <div class="rightForm">
+                        <label for="lastName">Last Name</label>
+                        <div>
+                            <input type="text" id="lastName" name="lastName" placeholder="Branches" required/>
+                            <span></span>
+                        </div>
+                
+                        <label for="phone">Phone Number</label>
+                        <div>
+                            <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required/>
+                            <span></span>
+                        </div>
+                        <label for="conPass">Confirm Password</label>
+                        <div>
+                            <input type="password" id="conPass" name="conPass" placeholder="Confirm Password" required/>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-
             </form>
         </div>
         <input type="submit" form="signUp" value="Create Account"/>

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Reem+Kufi+Fun:wght@500&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background-color: #aac6ef7e;
+    background-color: #40583565;
+    font-family: 'Reem Kufi Fun';
 }
 
 .desktopPic {
@@ -11,8 +14,8 @@ body {
 }
 
 .mobilePic {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -23,50 +26,119 @@ body {
     width:100%;
 }
 
-p {
+h2 {
     text-align: center;
-    padding: 15px;
+    padding: 35px 20px 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 550;
 }
 
 .formBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #cadcf7;
+    background-color: #a3b69a65;
     width:100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.rightForm {
+    padding-left: 25px;
+}
+
+label {
+    border-bottom: 1px black solid;
+    margin-bottom: 4px;
 }
 
 input {
-    margin: 20px auto;
+    appearance: none;
+    margin: 5px auto 35px;
 }
 
-@media screen and (min-width: 1024px) {
+input:required {
+    border-radius: 10px;
+    border: 1.5px rgb(179, 179, 179) solid;
+    padding: 10px 0px 10px 8px;
+}
+
+input:focus {
+    border: 1.5px rgb(54, 57, 204) solid;
+}
+
+input:required:valid {
+    border: 1.5px solid rgba(0, 175, 44, 0.726);
+    background-color: rgba(156, 252, 180, 0.185);
+}
+
+input:invalid {
+    border: 1.5px solid rgba(207, 0, 0, 0.5);
+}
+
+span {
+    color: rgb(207, 0, 0);
+}
+
+span::after {
+    content: "*";
+}
+
+.picOverlay {
+    position: absolute;
+    left: 0px;
+    top: 320px;
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 165px;
+    width: 513px;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.overlayText {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
     
     body {
         flex-direction: row; 
     }
 
-    form {
+    h2 {
+        text-align: center;
+        padding: 10px 100px 0px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .divForm {
         flex-direction: row;
+        justify-content: center;
     }
 
     .leftForm {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        text-align: start;
     }
 
     .rightForm {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        text-align: start;
+        padding-left: 50px;
     }
 
     .mobilePic {
@@ -75,7 +147,7 @@ input {
 
     .desktopPic {
         width: auto;
-        height: 100vh;
+        height: 100%;
         display: flex;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     }
