@@ -65,21 +65,29 @@ input {
 }
 
 input:required {
-    border-radius: 10px;
-    border: 1.5px rgb(179, 179, 179) solid;
+    border-radius: 10px; 
     padding: 10px 0px 10px 8px;
 }
 
-input:focus {
-    border: 1.5px rgb(54, 57, 204) solid;
+input:required:invalid:placeholder-shown {
+    border: 1.5px rgb(179, 179, 179) solid;
+    background-color: white;
+}
+
+input:required:focus {
+    outline: 1.5px rgb(54, 57, 204) solid;
+    border: 0px;
 }
 
 input:required:valid {
+    transition: .6s;
     border: 1.5px solid rgba(0, 175, 44, 0.726);
     background-color: rgba(156, 252, 180, 0.185);
 }
 
-input:invalid {
+input:required:invalid {
+    transition: .6s;
+    background-color: rgba(248, 170, 170, 0.199);
     border: 1.5px solid rgba(207, 0, 0, 0.5);
 }
 
