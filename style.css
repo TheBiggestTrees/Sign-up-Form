@@ -175,6 +175,14 @@ span::after {
     content: "";
 }
 
+#passwordMatchPrompt {
+    margin-bottom: 5px;
+}
+
+#conPass {
+    margin-bottom: 10px;
+}
+
 .picOverlay {
     position: absolute;
     left: 0px;
