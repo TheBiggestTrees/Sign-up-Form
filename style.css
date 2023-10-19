@@ -9,6 +9,11 @@ body {
     font-family: 'Reem Kufi Fun';
 }
 
+p {
+    margin: 0px;
+    padding-top: 10px;
+}
+
 .desktopPic {
     display: none;
 }
@@ -19,6 +24,35 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+.picOverlayCombo {
+    position: relative;
+}
+
+.SSLogo {
+    width: auto;
+    height:125px;
+}
+
+.mobilePicOverlay {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.overlayMobileText {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: .3rem;
+    
+}
+
 .signUpForm {
     display: flex;
     flex-direction: column;
@@ -26,21 +60,16 @@ body {
     width:100%;
 }
 
-h2 {
+.hero {
     text-align: center;
-    padding: 35px 20px 50px;
-    font-size: 25px;
+    padding: 35px 20px 25px;
+    font-size: 16px;
     font-weight: 500;
-}
-
-.divForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 0px;
     font-weight: 550;
 }
 
@@ -48,25 +77,55 @@ h1 {
     background-color: #a3b69a65;
     width:100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.rightForm {
-    padding-left: 25px;
+.divForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     border-bottom: 1px black solid;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 input {
     appearance: none;
-    margin: 5px auto 35px;
+    margin: 5px 0px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    border: 2.5px solid black;
+    background-color: #6c99578c;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: large;
+    border-radius: 10px;
+    width: 210px;
+    height: 45px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6380569f;
+    scale: 1.02;
+    transition: all .2s ease-in-out;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="submit"]:active {
+    background-color: #b6daa69f;
+    scale: 1.04;
+    transition: all .2s ease-in-out;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 input:required {
     border-radius: 10px; 
-    padding: 10px 0px 10px 8px;
+    padding: 14px 50px 14px 8px;
 }
 
 input:required:invalid:placeholder-shown {
@@ -115,38 +174,51 @@ span::after {
     display: flex;
     align-items: center;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 250;
 }
 
-@media screen and (min-width: 1000px) {
-    
+.accountCreate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 780px) {
+   
+    .picOverlayCombo {
+        visibility: hidden;
+    }
+
     body {
         flex-direction: row; 
     }
 
-    h2 {
+    .hero {
         text-align: center;
-        padding: 10px 100px 0px;
-        font-size: 35px;
-        font-weight: 500;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 250;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
     .divForm {
-        flex-direction: row;
+        display: block;
+    }
+
+    .topForm, .bottomForm, .middleForm {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
-    .leftForm {
+    .inputs {
         display: flex;
         flex-direction: column;
-        text-align: start;
-    }
-
-    .rightForm {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        padding-left: 50px;
+        align-items: baseline;
     }
 
     .mobilePic {
@@ -159,9 +231,88 @@ span::after {
         display: flex;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     }
+  
+}
+
+@media screen and (min-width: 1024px) {
+
+    .picOverlayCombo {
+        visibility: hidden;
+    }
+
+    
+    body {
+        flex-direction: row; 
+    }
 
     .signUpForm {
-        margin: auto;
+        align-items: start;
+    }
+
+    .hero {
+        text-align: start;
+        margin-top: 0px;
+        margin: 5px 0px 25px;
+    }
+    
+    h1 {
+        margin-left: 25px;
+    }
+
+    .formBox {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .divForm {
+        display: block; 
+    }
+
+    .topForm, .bottomForm, .middleForm {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .bottomForm {
+        margin-bottom: 25px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .inputs:nth-child(2) {
+        margin-left: 50px;
+    }
+    
+    label {
+        margin-top: 15px;
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+
+    .mobilePic {
+        display: none;
+    }
+
+    .desktopPic {
+        width: auto;
+        height: 100%;
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .accountCreate {
+        align-items: start;
+        margin-left: 25px;
     }
   
 }
